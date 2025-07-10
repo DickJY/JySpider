@@ -1,0 +1,520 @@
+/*导航条盒子*/
+.nav{
+    /*定位层级*/
+    z-index: 999;
+    /*固定定位*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(110,130,140,0.5);
+}
+.nav-wrap{
+    width: 1200px;
+    height: 100%;
+    /*background-color: pink;*/
+    /*左右自适应居中*/
+    margin: auto;
+}
+/*logo 盒子*/
+.logo{
+    /*左浮动*/
+    float: left;
+    width: 150px;
+    height: 60px;
+    /*background-color: orange;*/
+    /*文本居中*/
+    text-align: center;
+    /*行高*/
+    line-height: 60px;
+    /*文字颜色*/
+    color: white;
+    /*文字类型*/
+    font-family: '楷体';
+    /*文字大小*/
+    font-size: 18px;
+}
+/*导航栏列表盒子*/
+.nav-list{
+    /*元素右侧对齐*/
+    float: right;
+    width: 650px;
+    height: 60px;
+    /*background-color: green;*/
+}
+.nav-list>li{
+    float: left;
+    width: 90px;
+    height: 60px;
+    /*background-color: purple;*/
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 14px;
+}
+.nav-list>li>a{
+    display: block;
+    width:100%;
+    height: 100%;
+    /*background-color: skyblue;*/
+    color: white;
+    /*文字间距*/
+    letter-spacing: 2px;
+}
+/*悬停修改文字颜色*/
+.nav-list>li>a:hover{
+    color: gray;
+}
+
+/*主体背景盒子*/
+#home{
+    /*相对定位*/
+    position: relative;
+    width: 100%;
+    height: 950px;
+    background-color: skyblue;
+}
+.bg-video{
+    width: 100%;
+    height: 100%;
+    /*background-color: green;*/
+}
+/*背景视频*/
+.bg-video>video{
+    width: 100%;
+    height: 100%;
+    /*等比例铺满  视频*/
+    object-fit: cover;
+}
+/*内容标题*/
+.home-wrap{
+    /*绝对定位*/
+    position: absolute;
+    top: 28%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 600px;
+    height: 430px;
+    /*background-color: orange;*/
+    text-align: center;
+}
+.home-wrap>h2{
+    color: white;
+    letter-spacing: 10px;
+    line-height: 40px;
+}
+
+.home-wrap>h1{
+    color:white;
+    letter-spacing: 10px;
+    /*顶部外边距*/
+    margin-top: 100px;
+}
+/*动态图片*/
+.all-pic{
+    position: relative;
+    top: 145px;
+    width: 100px;
+    height: 100px;
+    /*圆角样式*/
+    border-radius: 10px;
+    /*透明度*/
+    opacity: 0.8;
+}
+
+/*作者模块*/
+#author{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #eeeeee;
+}
+/*介绍盒子内容*/
+.author-wrap{
+    width: 1210px;
+    height: 400px;
+    background-color: white;
+    /*圆角样式*/
+    border-radius: 10px;
+}
+
+/*通用盒子水平居中样式*/
+.center-box{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+/*个人介绍*/
+.introduce{
+    float: left;
+    width: 300px;
+    height: 300px;
+    /*background-color: orange;*/
+    margin: 50px;
+}
+.introduce>h2{
+    color: #008abd;
+    /*底部外边距*/
+    margin-bottom: 50px;
+}
+.introduce>p{
+    color: #008abd;
+    font-size: 18px;
+    /*文本不换行显示*/
+    white-space: nowrap;
+    overflow: hidden;
+    /*溢出变为省略号*/
+    text-overflow: ellipsis;
+    line-height: 50px;
+    font-family: '楷体';
+}
+/*个人图片*/
+.author-img{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    /*圆形*/
+    border-radius: 50%;
+}
+/*二维码名片*/
+.card-box{
+    float: left;
+    margin: 50px;
+    width: 300px;
+    height: 300px;
+    /*background-color: deepskyblue;*/
+}
+.card-box>img{
+    width: 100%;
+    height: 260px;
+}
+.card-box>.text{
+    color: orange;
+    line-height: 30px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/*旅行模块*/
+#travel{
+    /*相对定位*/
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff;
+}
+.travel-wrap{
+    width: 1210px;
+    height: 600px;
+    /*background-color: orange;*/
+}
+/*旅行标题盒子*/
+.travel-box{
+    width: 100%;
+    height: 80px;
+    /*background-color: pink;*/
+}
+.travel-left{
+    float: left;
+    width: 250px;
+    height: 100%;
+    /*background-color: green;*/
+    /*文本居中*/
+    text-align: center;
+}
+.travel-left>h2{
+   line-height: 50px;
+    /*底部边框*/
+    border-bottom: 1px solid black;
+}
+.travel-left>p{
+    line-height: 30px;
+    /*文字间隔*/
+    letter-spacing: 5px;
+}
+/*查看更多按钮*/
+.travel-btn{
+    /*元素向右侧对齐*/
+    float: right;
+    width: 80px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid black;
+    /*顶部外边距*/
+    margin-top: 25px;
+}
+/*鼠标悬停样式*/
+.travel-btn:hover{
+    background-color: #444;
+    color: white;
+    /*鼠标变为小手*/
+    cursor: pointer;
+}
+
+/*旅行图片列表*/
+.travel-list{
+    width: 100%;
+    height: 500px;
+    /*background-color: purple;*/
+    margin-top: 15px;
+}
+.travel-list>li{
+    float: left;
+    width: 290px;
+    height: 240px;
+    margin: 5px 6px;
+    /*background-color: orange;*/
+}
+.travel-list>li>img{
+    width: 100%;
+    height: 100%;
+}
+
+/*鼠标悬停到对应 图片盒子 li 添加阴影效果*/
+.travel-list>li:hover{
+    /*盒子阴影  x轴   y轴  阴影模糊距离  阴影颜色*/
+    box-shadow: 2px 5px 10px #333;
+    /*变为小手*/
+    cursor: pointer;
+}
+
+/*技术模块*/
+#Technology{
+   position: relative;
+   width: 100%;
+   height: 300px;
+   background-color: #f5f5f5;
+}
+/*技术内容盒子*/
+.TNL-box{
+    width: 1210px;
+    height: 230px;
+    /*background-color: #008abd;*/
+}
+.TNL-box>li{
+    position: relative;
+    /*元素向左对齐*/
+    float: left;
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0px 36px;
+    box-shadow: 0px 1px 5px #333;
+}
+.TNL-text{
+    width: 130px;
+    height: 80px;
+    /*background-color: yellow;*/
+    line-height: 40px;
+    text-align: center;
+
+}
+.TNL-text>h3{
+    font-family: '宋体';
+}
+.TNL-text>p{
+    color: #096;
+}
+
+/*日志模块*/
+#Journal{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: #f5f5f5;
+}
+
+.Journal-wrap{
+    width: 1210px;
+    height: 91%;
+    /*background-color: pink;*/
+}
+/*日志标题*/
+.Journal-tit{
+    width: 200px;
+    height: 60px;
+    /*background-color: orange;*/
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+    font-family: '宋体';
+}
+
+.Journal-list{
+    width: 100%;
+    height: 800px;
+    /*background-color: skyblue;*/
+}
+.Journal-list>li{
+    float: left;
+    margin: 10px 6px;
+    width: 290px;
+    height: 380px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /*溢出隐藏*/
+    overflow: hidden;
+}
+.Journal-list>li:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+}
+/*图片盒子*/
+.Journal-list>li>.pic{
+    width: 100%;
+    height: 250px;
+    /*防止 图片放大之后 超出这个pic盒子*/
+    overflow: hidden;
+    /*background-color: orangered;*/
+}
+/*鼠标悬停  pic盒子  缩放img图片 */
+.Journal-list>li>.pic:hover img{
+    /*缩放效果   取值0~1  小于1的就是缩小 */
+    transform: scale(1.3);
+    /*默认1 正常大小  大于1的话就是放大*/
+}
+
+.pic>img{
+   width: 100%;
+   height: 100%;
+   /*过渡效果  让变大效果更加丝滑*/
+   transition: 0.5s;
+}
+
+.Journal-box{
+    width: 90%;
+    height: 120px;
+    /*background-color: #096;*/
+    margin: 5px auto;
+    line-height: 40px;
+}
+.Journal-box>.txt1{
+    color: gray;
+    font-size: 20px;
+}
+.Journal-box>h2{
+    color: skyblue;
+}
+/*悬停到  li盒子  修改 h2文字颜色*/
+.Journal-list>li:hover h2{
+    color: orange;
+}
+
+.Journal-box>.txt2{
+    color: #999;
+}
+/*查看全部按钮*/
+.all-box{
+    /*变为块级元素*/
+    display: block;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+/*留言模块*/
+#footer{
+    /*相对定位*/
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-color: #eee;
+}
+.footer-wrap{
+    width: 1210px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #ccc;
+    /*背景图片*/
+    background-image: url("./img/13.png");
+}
+.footer-wrap>h4{
+    font-size: 22px;
+    line-height: 40px;
+    font-family: '宋体';
+    /*文本缩进   1em=16px*/
+    text-indent: 1em;
+}
+/*留言表单区域盒子 */
+.message-box{
+    width: 1000px;
+    height: 430px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+.input-box{
+    width: 100%;
+    height: 100px;
+    /*background-color: orangered;*/
+}
+.input-box>input{
+    /*怪异盒模型*/
+    box-sizing: border-box;
+    width: 300px;
+    height: 60px;
+    margin: 20px 15px;
+    /*边框无*/
+    border: none;
+    /*底部虚线边框*/
+    border-bottom: 2px dashed skyblue;
+    font-size: 17px;
+    /*首行文本缩进*/
+    text-indent: 1em;
+}
+/*点击input  获取焦点  修改它底部边框的颜色*/
+.input-box>input:focus{
+    /*底部边框颜色*/
+    border-bottom-color: #096;
+}
+/*多行文本输入框*/
+#textarea{
+    width: 99%;
+    height: 280px;
+    border: none;
+    text-indent: 10px;
+    font-size: 17px;
+    border-bottom: 1px solid #ccc;
+    background-image: url("./img/fan.webp");
+    /*背景不平铺*/
+    background-repeat: no-repeat;
+    /*背景显示位置  右侧*/
+    background-position: right;
+    /*清除默认焦点*/
+    outline: none;
+}
+#textarea:focus{
+    border-bottom: 1px solid orange;
+}
+
+/*提交按钮*/
+.sub{
+    float: right;
+    width: 100px;
+    height: 35px;
+    color: white;
+
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(130,200,260);
+}
+
+.my-music{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}

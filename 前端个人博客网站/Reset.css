@@ -1,0 +1,36 @@
+/*第二种写法 找到对应的标签 进行对应的清除 */
+body,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin:0px;
+}
+
+ol,
+ul{
+    margin:0px;
+    padding:0px;
+     /*清除列表的序号*/
+    list-style:none;
+}
+img{
+    border:none;
+}
+/*清除a标签默认自带下划线*/
+a{
+    /*清除文本线*/
+    text-decoration: none;
+}
+
+/*清除默认自带边框*/
+input,button{
+    /*border: none;*/
+
+    /*清除默认焦点边框*/
+    outline: none;
+}

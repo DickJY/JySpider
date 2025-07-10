@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>揭勇博客</title>
+    <!--清除默认样式-->
+    <link rel="stylesheet" href="./Reset.css">
+    <!--首页样式-->
+    <link rel="stylesheet" href="./index.css">
+    <!--引入jQuery-->
+    <script src="./jQuery.js"></script>
+</head>
+<body>
+    <!--导航条-->
+    <div class="nav">
+        <div class="nav-wrap">
+            <!--logo盒子-->
+            <a href="" class="logo">
+                揭勇博客
+            </a>
+            <!--导航栏列表盒子-->
+            <ul class="nav-list">
+                <li>
+                    首页
+                </li>
+                <li>
+                    <a href="https://github.com/DickJY/JySpider">个人GitHub</a>
+                </li>
+                <li>
+                    <a href="https://blog.csdn.net/2401_88738910?spm=1000.2115.3001.10640">个人csdn</a>
+                </li>
+                <li>
+                    <a href="https://chat.deepseek.com/">deepseek</a>
+                </li>
+                <li>
+                    <a href="https://www.runoob.com/">菜鸟教程</a>
+                </li>
+                <li>
+                    <a href="https://www.cnblogs.com/">博客园</a>
+                </li>
+                <li>
+                    <a href="">ENGLISH</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   <!--主体背景盒子-->
+   <div id="home">
+        <!--背景视频盒子-->
+       <div class="bg-video">
+           <!--
+             controls 视频控制面板
+             autoplay: 自动播放属性
+             搭配禁音播放:muted
+             loop 循环播放
+           -->
+           <video src="./img/草原.mp4" autoplay muted loop></video>
+       </div>
+       <!--内容标题-->
+       <div class="home-wrap">
+           <h2>Welcome to my blog</h2>
+           <h1>欢迎来到我的博客</h1>
+           <img src="./img/动1.webp" alt="" class="all-pic" title="滚动把你的鼠标">
+       </div>
+   </div>
+    <!--个人介绍模块 > author(作者)-->
+    <div id="author">
+        <div class="author-wrap center-box">
+            <!--个人介绍信息-->
+            <div class="introduce">
+                <h2>个人介绍</h2>
+                <p>揭勇</p>
+                <p>江西农业大学南昌商学院计算机系大数据2201班</p>
+                <p>掌握:html+css+js 等前端技术</p>
+                <p>js逆向爬虫mysql和nosql数据库和py数据分析</p>
+                <p>爱好:无不良嗜好 不是个杠精</p>
+            </div>
+            <!--个人头像-->
+            <img src="./img/证件照.jpg" alt="" class="author-img">
+            <!--个人名片-->
+            <div class="card-box">
+                <img src="./img/WechatIMG35.jpg" alt="">
+                <p class="text">联系作者</p>
+            </div>
+        </div>
+    </div>
+    <!--旅行模块-->
+    <div id="travel">
+       <div class="travel-wrap center-box">
+           <div class="travel-box">
+               <div class="travel-left">
+                   <h2>Explore the world</h2>
+                   <p>探索世界</p>
+               </div>
+               <button class="travel-btn">
+                   分享更多&gt;
+               </button>
+           </div>
+           <!--旅行图片列表-->
+           <ul class="travel-list"></ul>
+       </div>
+    </div>
+
+   <!--技术模块-->
+    <div id="Technology">
+         <ol class="TNL-box center-box">
+             <li>
+                 <div class="TNL-text center-box">
+                     <h3>HTML+CSS</h3>
+                     <p>85%</p>
+                 </div>
+             </li>
+             <li>
+                 <div class="TNL-text center-box">
+                     <h3>JavaScrip</h3>
+                     <p>75%</p>
+                 </div>
+             </li>
+             <li>
+                 <div class="TNL-text center-box">
+                     <h3>web框架</h3>
+                     <p>80%</p>
+                 </div>
+             </li>
+             <li>
+                 <div class="TNL-text center-box">
+                     <h3>js逆向爬虫</h3>
+                     <p>90%</p>
+                 </div>
+             </li>
+         </ol>
+    </div>
+    <!--日志模块-->
+     <div id="Journal">
+          <div class="Journal-wrap center-box">
+              <h2 class="Journal-tit">Journal-旅行</h2>
+              <ul class="Journal-list">
+                  <li>
+                      <div class="pic">
+                          <img src="./img/9.jpg" alt="">
+                      </div>
+                      <div class="Journal-box">
+                         <p class="txt1">感想</p>
+                         <h2>实践出真理</h2>
+                         <p class="txt2">
+                             时间:
+                             <span class="time"></span>
+                         </p>
+                      </div>
+                  </li>
+                  <li>
+                      <div class="pic">
+                          <img src="./img/3.jpg" alt="">
+                      </div>
+                      <div class="Journal-box">
+                         <p class="txt1">感想</p>
+                         <h2>实践出真理</h2>
+                         <p class="txt2">
+                             时间:
+                             <span class="time"></span>
+                         </p>
+                      </div>
+                  </li>
+                   <li>
+                      <div class="pic">
+                          <img src="./img/4.jpg" alt="">
+                      </div>
+                      <div class="Journal-box">
+                         <p class="txt1">感想</p>
+                         <h2>实践出真理</h2>
+                         <p class="txt2">
+                             时间:
+                             <span class="time"></span>
+                         </p>
+                      </div>
+                  </li>
+                   <li>
+                      <div class="pic">
+                          <img src="./img/10.png" alt="">
+                      </div>
+                      <div class="Journal-box">
+                         <p class="txt1">感想</p>
+                         <h2>实践出真理</h2>
+                         <p class="txt2">
+                             时间:
+                             <span class="time"></span>
+                         </p>
+                      </div>
+                  </li>
+                   <li>
+                      <div class="pic">
+                          <img src="./img/11.png" alt="">
+                      </div>
+                      <div class="Journal-box">
+                         <p class="txt1">感想</p>
+                         <h2>实践出真理</h2>
+                         <p class="txt2">
+                             时间:
+                             <span class="time"></span>
+                         </p>
+                      </div>
+                  </li>
+                   <li>
+                      <div class="pic">
+                          <img src="./img/12.png" alt="">
+                      </div>
+                      <div class="Journal-box">
+                         <p class="txt1">感想</p>
+                         <h2>实践出真理</h2>
+                         <p class="txt2">
+                             时间:
+                             <span class="time"></span>
+                         </p>
+                      </div>
+                  </li>
+                   <li>
+                      <div class="pic">
+                          <img src="./img/13.jpg" alt="">
+                      </div>
+                      <div class="Journal-box">
+                         <p class="txt1">感想</p>
+                         <h2>实践出真理</h2>
+                         <p class="txt2">
+                             时间:
+                             <span class="time"></span>
+                         </p>
+                      </div>
+                  </li>
+                   <li>
+                      <div class="pic">
+                          <img src="./img/14.jpg" alt="">
+                      </div>
+                      <div class="Journal-box">
+                         <p class="txt1">感想</p>
+                         <h2>实践出真理</h2>
+                         <p class="txt2">
+                             时间:
+                             <span class="time"></span>
+                         </p>
+                      </div>
+                  </li>
+              </ul>
+              <button class="all-box">查看全部</button>
+          </div>
+     </div>
+
+    <!--留言模块-->
+    <div id="footer">
+         <div class="footer-wrap center-box">
+           <h4>留言</h4>
+           <form action="" class="message-box">
+               <div class="input-box">
+                   <input type="text" placeholder="昵称/微信">
+                   <input type="email" placeholder="请输入你的邮箱">
+                   <input type="text" placeholder="网址/https://">
+               </div>
+               <textarea name="" id="textarea" placeholder="帅哥/美女请留下你的联系方式或者宝贵意见,非常感谢"></textarea>
+
+               <input type="submit" class="sub">
+           </form>
+         </div>
+    </div>
+    <!--audio音频标签  -->
+    <audio src="./好妹妹乐队%20-%20往事只能回味.ogg" controls loop autoplay class="my-music"></audio>
+    <script>
+        // 获取当前图片列表节点
+        let travel=document.querySelector('.travel-list');
+        console.log(travel);
+
+        //创建节点
+        // let item=document.createElement('li');
+        // //添加节点
+        // travel.appendChild(item);
+        // //设置新增节点内容
+        // item.innerHTML="<img src='./img/1.jpg'>";
+        //图片数组
+        let picArr=['./img/1.jpg','./img/2.jpg','./img/3.jpg','./img/4.jpg','./img/5.jpg','./img/6.jpg','./img/7.jpg','./img/8.jpg']
+        // 循环创建 8次节点
+        for (let i=0;i<8;i++){
+            //创建节点
+            let item=document.createElement('li');
+            //添加节点
+            travel.appendChild(item);
+            //设置新增节点内容
+            item.innerHTML=`<img src=${picArr[i]} alt="">`;
+        }
+
+
+        // 获取日期对象
+        let Time=$('.time').get();
+        console.log(Time);
+
+
+
+        // 更新时间的函数
+        function NewTime() {
+          // 创建日期对象
+            let date=new Date();
+            // 获取年份
+            let YY=date.getFullYear();
+            //获取月份
+            let Moth=date.getMonth()+1;
+            //获取日期
+            let DD=date.getDate();
+
+            //秒
+            let SS=date.getSeconds();
+            // 插入节点
+            Time.innerHTML=`${YY}-${Moth}-${DD}&nbsp;&nbsp;&nbsp;&nbsp;评论:${SS}`
+
+            $(Time).each(function (index,item) {
+            // console.log(index,item)
+            item.innerHTML=`${YY}-${Moth}-${DD}&nbsp;&nbsp;&nbsp;&nbsp;评论:${SS}`
+        })
+
+        }
+        // 定时器
+        setInterval(NewTime,100);
+
+        //点击查看全部 跳转其它网页
+        $('.all-box').click(function () {
+            location.href='https://www.51miz.com/so-tupian/9663986.html';
+        })
+
+        let music=document.querySelector('.my-music');
+        //点击页面之后 就自动播放音乐
+        window.onclick=function () {
+             // 自动播放方法
+             music.play();
+        }
+
+    </script>
+</body>
+</html>
